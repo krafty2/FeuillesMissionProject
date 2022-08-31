@@ -1,0 +1,59 @@
+.separateur{
+    background-color: #FF5714;
+    color: white;
+    justify-content: center;
+    width: 200px;
+    margin-left: 4ex;
+}
+
+p{
+    background-color: #07A0C3;
+    color: white;
+}
+
+body{
+    background-color: #E8E8E8;
+}
+
+hr{
+    margin-top: 10ex;
+    margin-right: 5ex;
+    
+}
+
+hr.class-5 {
+    background-color: #fff;
+    border-top: 2px dashed #E85D04;
+}
+
+.lect{
+    width: 80px;
+    background-color: #07A0C3;
+    
+    color: white;
+}
+
+.box{
+    background-color: #FFFFFF;
+}
+
+input{
+    font-weight: bold;
+}
+
+.test{
+    background-color: #778DA9;
+    color: #FFFFFF;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    
+  }
+  
+  .flex-container > div {
+    color: #090302;
+    border-color: 090302;
+    text-align: center;
+  }

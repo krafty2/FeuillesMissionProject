@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/feuille_mission.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+        <!--------------------------------------------B1---------------------------------------------------------->
+        <div class="" style="flex-grow: 6">
+            <h1 class="mx-2 my-2">Feuille de mission</h1>
+
+            <p>Make the third flex item grow eight times faster than the other flex items:</p>
+            <!------------------------------------------------------------------------------------------------------>
+            <div class="mx-2 my-2 centrer">
+                <!---------------------------------------------------------------------------------------------------->
+                <div class="flex-container ">
+                    <!------------------------------------------------------------------------------------------------>
+                    <div style="flex-grow: 2" class="border">
+                        <img class="ms-2" th:src="@{/images/logo.png}" alt="logo_totalenergies">
+                        <p class="mt-3 ms-2 texte">TotalEnergies Marketing Burkina</p>
+                    </div>
+                    <!------------------------------------------------------------------------------------------------>
+                    <div style="flex-grow: 3" class="border">
+                        <div class="border">
+                            <p class="">REGLE INTERNE</p>
+                        </div>
+                        <div class="flex-container">
+                            <div class="border flex-interne" style="flex-grow: 2">REV : 1</div>
+                            <div class="border flex-interne" style="flex-grow: 2">Date d'effet : 03/2022</div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------------>
+                    <div style="flex-grow: 2" class="border">
+                        <div class="border">
+                            <p>CR-BF-RH-007</p>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------------------------------------------------------------------------------------->
+                <div>
+                    <p class="text-center border">Procedure de deplacement</p>
+                </div>
+            </div>
+            <section>
+            	<p>Nom  : <span th:text = "${personne.nom}"></span> </p>
+            	<p>Prenom : <span th:text = "${personne.prenom}"></span></p>
+            	<p>Fonction : <span th:text = "${personne.fonction}"></span></p>
+            	<p>Date de depart : <span th:text="${feuille.date_depart}"></span></p>
+            	<p>Heure de depart : <span th:text="${feuille.heure_Depart}"></span></p>
+            	<p>Date de retour : <span th:text="${feuille.date_retour}"></span></p>
+            	<p>Heure de retour : <span th:text="${feuille.heure_Retour}"></span></p>
+            	<p>Destination : <span th:text="${feuille.destination}"></span></p>
+            </section>
+        </div>
+        
+        
+        <!------------------------------------B2---------------------------------------------------------------------->
+
+        <div class="border ms-2 me-2 ht" style="flex-grow: 8">
+            <p>Validation interesse</p>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Fonction</th>
+                    <th scope="col">Nom & Prenom</th>
+                    <th scope="col">Validation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td >Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@fat</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+        
+
+
+    
+</body>
+</html>

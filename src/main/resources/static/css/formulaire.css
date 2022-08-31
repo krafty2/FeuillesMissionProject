@@ -1,0 +1,17 @@
+body{
+    background-color: #E8E8E8;
+}
+
+.lect{
+    width: 80px;
+    background-color: #07A0C3;
+    color: white;
+}
+
+.box{
+    background-color: #FFFFFF;
+}
+
+input{
+    font-weight: bold;
+}

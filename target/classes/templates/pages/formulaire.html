@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/CSS/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/CSS/formulaire.css}" rel="stylesheet">
+    <title </title>Creation de feuille de mission</title>
+</head>
+<body>
+    <!--form th:action="@{/enregistrerFeuille}" method="post"------------>
+    
+    <form class="container w-50 p-3 mb-4" th:action="@{/enregistrerFeuille}" method="post">
+    
+        <div  class="border mt-5 box  shadow-sm rounded-1">
+            <p class="ms-3">Annexes</p>
+            <img class="ms-3" th:src="@{/images/logo.png}" alt="logo_totalenergies">
+            <p class="ms-3 mt-2">TotalEnergies Marketing Burkina</p>
+        </div>
+        
+        <div class="border box shadow-sm rounded-1 fs-5 fw-bold ms-3 me-3 text-center">
+            PROCEDURE DE DEPLACEMENT
+        </div>
+        
+        <div  class="border box shadow-sm rounded-1 fs-5 fw-bold ms-3 me-3 text-center">
+            FEUILLE DE MISSION
+        </div>
+
+        <div class="border shadow-sm box rounded-1">
+        	<!---------------------------------------------------------------------------------------->
+            <div class="row mx-4 my-2">
+                <div class="col-12">
+                    <label for="igg" class="form-label">IGG</label>
+                    <input type="text" class="form-control form-control-sm" id="igg" name="igg" placeholder="- IGG">
+                </div>  
+            </div>
+            <!---------------------------------------------------------------------------------------->
+            <div class="row mx-4 my-2">
+                <div class="col-12">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control form-control-sm" id="nom" name="nom" placeholder="- Nom">
+                </div>  
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="prenom" class="form-label">Prenom</label>
+                    <input type="text" class="form-control form-control-sm" id="prenom" name="prenom" placeholder="- Prenom">
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------------------->
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="prenom" class="form-label">Fonction</label>
+                    <input type="text" class="form-control form-control-sm" id="fonction" name="fonction" placeholder="- Fonction">
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-6">
+                    <label for="date_depart" class="form-label">Date de depart</label>
+                    <input type="date" class="form-control form-control-sm" id="date_depart" name="date_depart" placeholder="- Date de depart" required>
+                </div>
+                <div class="col-6">
+                    <label for="heureD" class="form-label">Heure de depart</label>
+                    <input type="time" class="form-control form-control-sm" id="heureD" name="heureD" placeholder="- Heure de retour" required>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-6">
+                    <label for="date_retour" class="form-label">Date de retour</label>
+                    <input type="date" class="form-control form-control-sm" id="date_retour" name="date_retour" placeholder="- Date de retour" required>
+                </div>
+                
+                <div class="col-6">
+                    <label for="heureR" class="form-label">Heure de retour</label>
+                    <input type="time" class="form-control form-control-sm" id="heureR" name="heureR" placeholder="- Heure de retour" required>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="destination" class="form-label">Destination</label>
+                    <input type="text" class="form-control form-control-sm" id="destination" name="destination" placeholder="- Destination" required>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="locomotion" class="form-label">Moyen de locomotion</label>
+                    <input type="text" class="form-control form-control-sm" id="locomotion" name="locomotion" placeholder="- Moyen de Locomotion" required>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="objetMission" class="form-label">Objet</label>
+                    <textarea class="form-control" id="objetMission" name="objetMission" rows="3" required></textarea>
+                </div>  
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="objet" class="form-label">Joindre le programme de la missionjet</label>
+                    <input type="file" class="form-control form-control-sm" id="programme" name="programme">
+                </div>  
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------>
+            <div class="row mx-4 my-4">
+                <div class="col-12">
+                    <label for="argent" class="form-label">Avance sollicite</label>
+                    <input type="number" class="form-control form-control-sm" id="argent" name="argent" placeholder="- argent">
+                </div>  
+            </div>
+            <!------------------------------------------------------------------------------------------>
+            <div class="d-grid mt-5 mx-4 my-4">
+                <button class="btn btn-danger" type="submit">Creer</button>
+            </div>
+        </div>
+    </form>  
+</body>
+</html>

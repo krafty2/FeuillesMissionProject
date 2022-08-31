@@ -1,0 +1,31 @@
+img{
+    height: 50px;
+    width: 50ppx;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    
+  }
+ 
+ .centrer{
+	text-align: center;
+}
+ 
+  .flex-container > div {
+    color: #090302;
+    border-color: 090302;
+  }
+
+ .texte{
+     font-size: 16px;
+ }
+
+ .flex-interne{
+    line-height: 90px;
+ }
+
+ .ht{
+    margin-top: 45ex;
+ }

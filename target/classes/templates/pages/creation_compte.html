@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/creation_compte.css" rel="stylesheet">
+    <title </title>Creation de compte</title>
+</head>
+<body>
+    <div class="container w-50 p-3 mb-4">
+        <!---------------------------------------------------------------------Partie 1-------------------------------------------------------------------------------->
+        <form th:action="@{/creer}" method="post">
+            <div>
+                <div class="border mt-2 shadow-sm box rounded-1">
+                    <p class="p-1 shadow-sm text-center">Creation de compte</p>
+
+                    <div class="row mx-4 my-4">
+                        <div class="col-12 form-check form-switch ms-2">
+                            <input class="form-check-input" type="checkbox" role="switch" id="directeur" name="directeur" th:value="oui">
+                            <label class="form-check-label" for="directeur">Est-ce un directeur?</label>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------------------------------------------------------->
+                    <div class="row mx-4 my-4">
+                        <div class="col-12">
+                            <label for="Igg" class="form-label">Igg</label>
+                            <input type="text" class="form-control form-control-sm" id="igg" name="igg" placeholder="- Igg">
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------>
+                    <div class="row mx-4 my-4">
+                        <div class="col-12">
+                            <label for="nom" class="form-label">Nom</label>
+                            <input type="text" class="form-control form-control-sm" id="nom" name="nom" placeholder="- Nom">
+                        </div>  
+                    </div>
+                    <!------------------------------------------------------------------------------------------->
+                    <div class="row mx-4 my-4">
+                        <div class="col-12">
+                            <label for="prenom" class="form-label">Prenom</label>
+                            <input type="text" class="form-control form-control-sm" id="prenom" name="prenom" placeholder="- Prenom">
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------->
+                    <div class="row mx-4 my-4">
+                        <div class="col-12">
+                            <label for="prenom" class="form-label">Fonction</label>
+                            <input type="text" class="form-control form-control-sm" id="fonction" name="fonction" placeholder="- Fonction">
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------->
+                    <div class="row mx-4 my-4">
+                        <div class="col-12">
+                            <label for="departement" class="form-label">Departement</label>
+                            <select class="form-select form-select-sm" name="departement" id="departement">
+                                <option selected>Departement</option>
+                                <option value="CG-DEX">CG-DEX</option>
+                                <option value="DCCG">DCCG</option>
+                                <option value="DCR">DCR</option>
+                                <option value="DEX">DEX</option>
+                                <option value="DF">DF</option>
+                                <option value="DLT">DLT</option>
+                                <option value="DRH">DRH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------->
+                    <div class="row mx-4 my-4">
+                        <div class="col-12">
+                            <label for="nomSuperieur" class="form-label">Igg Superieur Hierarchique</label>
+                            <input type="text" class="form-control form-control-sm" id="iggSuperieur" name="iggSuperieur" placeholder="- Igg -> superieur hierarchique">
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------->
+                
+                    <!------------------------------------------------------------------------------------------->
+
+                    <div class="d-grid mt-5 mx-4 my-4">
+                        <button class="btn btn-danger" type="submit">Creer</button>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
